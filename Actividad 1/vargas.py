@@ -6,6 +6,7 @@ pi = np.pi
 max_iter = np.array(range(100))
 
 def metodo_1(booleano):
+    #Precondición
     i = 0
     resultado = 0
     while booleano:
