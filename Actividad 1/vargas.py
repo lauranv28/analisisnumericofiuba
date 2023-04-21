@@ -1,4 +1,3 @@
-from math import floor
 import numpy as np
 
 #Datos de entrada
@@ -29,7 +28,7 @@ def metodo_2(booleano):
         if i % 2 == 0:
             continue
 
-        signo = (-1) ** (floor(i / 2))
+        signo = (-1) ** (np.fix(i / 2))
         sum_1 = sum_1 + (signo * ((1/2) ** i) / i)
         sum_2 = sum_2 + (signo * ((1/3) ** i) / i)
         resultado = (sum_1 + sum_2) * 4
